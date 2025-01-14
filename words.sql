@@ -34,6 +34,16 @@ SET
   english = 'I',
   spanish = 'yo',
   hanzi_story = 'The umbrella acts as a halberd that slashes monsters across the fence',
-  hanzi_mnemonic = 'The (wo)rrior carries the mighty umbrella.',
+  hanzi_mnemonic = 'The (wo3)rrior carries the mighty umbrella.',
   hanzi_radicals = 'umbrella, halberd, slash'
 WHERE hanzi = '我';
+
+-- Adding a new row (which could also be done from a .csv, API or other manner)
+INSERT INTO words (hanzi, pinyin, bengali, bengali_latin, english, spanish, hanzi_story, hanzi_mnemonic, hanzi_radicals)
+VALUES 
+(
+    '们', 'men5', 'রা', 'ra', '-s', '-s',
+    'You apply the magical powers of the staff onto the gate to widen it for more than one.',
+    'Now multiple (men5) and women can pass through the gate!',
+    'staff, gate'
+)
