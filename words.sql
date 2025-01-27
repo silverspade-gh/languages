@@ -49,3 +49,7 @@ VALUES
     'Now multiple (men5) and women can pass through the gate!',
     'staff, gate' -- Note that there is a null entry: word_type was not specified because plurals don't classify as types.
 )
+
+-- Modification of a column
+ALTER TABLE words
+ALTER COLUMN bengali VARCHAR(100);
