@@ -53,3 +53,7 @@ VALUES
 -- Modification of a column
 ALTER TABLE words
 ALTER COLUMN bengali VARCHAR(100);
+
+-- Modification of a column's constraint
+ALTER TABLE words
+ADD CONSTRAINT pinyin_is_unique UNIQUE (pinyin);
